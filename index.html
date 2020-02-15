@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Login</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--===============================================================================================-->	
+	<link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="fonts/iconic/css/material-design-iconic-font.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+<!--===============================================================================================-->	
+	<link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/animsition/css/animsition.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+<!--===============================================================================================-->	
+	<link rel="stylesheet" type="text/css" href="vendor/daterangepicker/daterangepicker.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="css/util.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+<!--===============================================================================================-->
+<style type="text/css">
+	#login_div{
+		display: none;
+	}
+</style>
+</head>
+<body>
+	
+	
+	<div class="container-login100" style="background-image: url('images/bg-01.jpg');">
+				<div id="registration_div" class="wrap-login100 p-l-55 p-r-55 p-t-80 p-b-30">
+			<form id="registeruserform" class="login100-form validate-form">
+				<span class="login100-form-title p-b-37">
+					Registration Form
+				</span>
+
+				<div class="wrap-input100 validate-input m-b-20" data-validate="Enter Username">
+					<input class="input100" type="text" name="name" id="name" placeholder="Username">
+					<span class="focus-input100"></span>
+				</div>
+
+				<div class="wrap-input100 validate-input m-b-20" data-validate="Enter Emailid">
+					<input class="input100" type="text" name="email" id="email" placeholder="Email">
+					<span class="focus-input100"></span>
+				</div>
+
+				<div class="wrap-input100 validate-input m-b-25" data-validate = "Enter Contact Number">
+					<input class="input100" type="text" name="contact" id="contact" placeholder="Contact No.">
+					<span class="focus-input100"></span>
+				</div>
+
+				<div class="wrap-input100 validate-input m-b-25" data-validate = "Enter password">
+					<input class="input100" type="password" name="password" id="password" placeholder="password">
+					<span class="focus-input100"></span>
+				</div>
+
+				<div class="container-login100-form-btn">
+					<button onclick="registeruser()" class="login100-form-btn" type="button">
+						Registration
+					</button>
+				</div>
+				</form>
+
+				<div class="text-center">
+					<span onclick="showloginform()" style="color: blue">
+						Login
+					</span>
+				</div>
+			
+
+			
+		</div>
+		<div id="login_div" class="wrap-login100 p-l-55 p-r-55 p-t-80 p-b-30">
+		
+				<span class="login100-form-title p-b-37">
+					Log In
+				</span>
+
+				<div class="wrap-input100 validate-input m-b-20" data-validate="Enter username or email">
+					<input class="input100" type="text" name="email" id="email_l" placeholder="username or email">
+					<span class="focus-input100"></span>
+				</div>
+
+				<div class="wrap-input100 validate-input m-b-25" data-validate = "Enter password">
+					<input class="input100" type="password" id="password_l" name="password" placeholder="password" required="">
+					<span class="focus-input100"></span>
+				</div>
+
+				<div class="wrap-input100 validate-input m-b-25" data-validate = "Enter password">
+					
+					<span id="login_notif"></span>
+				</div>
+
+
+				<div class="container-login100-form-btn">
+					<button onclick="loginuser()" class="login100-form-btn">
+						Log In
+					</button>
+				</div>
+
+				<div class="text-center">
+					<span onclick="showregistrationform()" style="color: blue">
+						Registration
+					</span>
+				</div>
+
+			
+		</div>
+
+
+	</div>
+	
+	
+
+	<div id="dropDownSelect1"></div>
+	
+<!--===============================================================================================-->
+	<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/animsition/js/animsition.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/bootstrap/js/popper.js"></script>
+	<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/select2/select2.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/daterangepicker/moment.min.js"></script>
+	<script src="vendor/daterangepicker/daterangepicker.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/countdowntime/countdowntime.js"></script>
+<!--===============================================================================================-->
+	<script src="js/main.js"></script>
+
+	<script type="text/javascript">
+		function registeruser(){
+			let name = document.getElementById('name').value
+			let email = document.getElementById('email').value
+			let contact = document.getElementById('contact').value
+			let password = document.getElementById('password').value
+			let databody = {name, email, password, contact}
+			// let form = document.getElementById("registeruserform")
+			// let formData = new FormData(form)
+			//console.log(formData)
+			fetch("http://localhost:7117/api/user/signup",{
+				headers: {
+				      'Accept': 'application/json',
+				      'Content-Type': 'application/json'
+				},
+				method:"POST",
+				body: JSON.stringify(databody)
+			})
+			.then(function(result){
+				console.log(result)
+				return result.json()
+			})
+			.then(function(data){
+				document.getElementById("registration_div").style.display = "none"
+				document.getElementById("login_div").style.display = "block"
+
+			//	window.location = 'file:///D:/nodepros/Login_v9/index.html'
+			// let name = document.getElementById('name').value = ""
+			// let email = document.getElementById('email').value = ""
+			// let contact = document.getElementById('contact').value = ""
+			// let password = document.getElementById('password').value = ""
+				// console.log(data)
+			})
+			.catch(function(err){
+				console.log(err)
+			})
+		}
+
+		function loginuser(){
+			let email = document.getElementById('email_l').value
+			let password = document.getElementById('password_l').value
+			let databody = {name, email, password, contact}
+			// let form = document.getElementById("registeruserform")
+			// let formData = new FormData(form)
+			//console.log(formData)
+			fetch("http://localhost:7117/api/user/loginn",{
+				headers: {
+				      'Accept': 'application/json',
+				      'Content-Type': 'application/json'
+				},
+				method:"POST",
+				body: JSON.stringify(databody)
+			})
+			.then(function(result){
+				console.log(result)
+				return result.json()
+			})
+			.then(function(data){
+				if(data.status === 0){
+					document.getElementById("login_notif").style.color = "red"
+					document.getElementById("login_notif").innerHTML = data.message
+				}
+				else if(data.status === 1){
+					document.getElementById('email_l').value = ""
+					document.getElementById('password_l').value = ""
+					document.getElementById("login_notif").style.color = "green"
+					document.getElementById("login_notif").innerHTML = data.message
+				}
+				else if(data.status === 2){
+					document.getElementById("login_notif").style.color = "red"
+					document.getElementById("login_notif").innerHTML = data.message
+				}
+				else{
+					console.log("problems happened")
+				}
+			})
+			.catch(function(err){
+				console.log(err)
+			})
+		}
+
+		function showregistrationform(){
+			document.getElementById("registration_div").style.display = "block"
+			document.getElementById("login_div").style.display = "none"
+		}
+
+		function showloginform(){
+			document.getElementById("registration_div").style.display = "none"
+			document.getElementById("login_div").style.display = "block"
+		}
+	</script>
+</body>
+</html>
