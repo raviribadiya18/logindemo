@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title></title>
+	<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--===============================================================================================-->	
+<link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
+<!--===============================================================================================-->
+<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+<!--===============================================================================================-->
+<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+<!--===============================================================================================-->
+<link rel="stylesheet" type="text/css" href="fonts/iconic/css/material-design-iconic-font.min.css">
+<!--===============================================================================================-->
+<link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+<!--===============================================================================================-->	
+<link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
+<!--===============================================================================================-->
+<link rel="stylesheet" type="text/css" href="vendor/animsition/css/animsition.min.css">
+<!--===============================================================================================-->
+<link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+<!--===============================================================================================-->	
+<link rel="stylesheet" type="text/css" href="vendor/daterangepicker/daterangepicker.css">
+<!--===============================================================================================-->
+<link rel="stylesheet" type="text/css" href="css/util.css">
+<link rel="stylesheet" type="text/css" href="css/main.css">
+<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.20/css/jquery.dataTables.min.css">
+</head>
+<body>
+ <table id="example1" class="table table-bordered table-striped">
+            <thead>
+            <tr>
+              <th>No.</th>
+              <th>Name</th>
+              <th>Email</th>
+              <th>Contact</th>
+              <th>Profile Image</th>
+              <!-- <th>Action</th>   -->
+              
+              <!-- <th>Date</th>
+              <th>User Info</th>
+              <th>Status</th> -->
+              <th><button onclick="deleteusers()" class="btn btn-danger">Delete</button></th>            
+            </tr>
+            </thead>
+            <tbody>
+            </tbody>
+            <!-- <tfoot>
+            <tr>
+              <th>No.</th>
+              <th>Name</th>
+              <th>Email</th>
+              <th>Contact</th>
+              <th>Profile Image</th>
+              <th><div class='form-group'><div class='custom-control custom-checkbox'><input onclick="checkAll()" class='custom-control-input' type='checkbox' id='customCheckbox3' value='option1'><label for='customCheckbox3' class='custom-control-label'><button onclick="deletekeychains()" class="btn btn-danger">Delete All</button></label></div></div></th>
+            </tr>
+            </tfoot> -->
+          </table>
+
+</body>
+
+<!--===============================================================================================-->
+<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+<script src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js"></script>
+<!--===============================================================================================-->
+<script src="vendor/animsition/js/animsition.min.js"></script>
+<!--===============================================================================================-->
+<script src="vendor/bootstrap/js/popper.js"></script>
+<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+<!--===============================================================================================-->
+<script src="vendor/select2/select2.min.js"></script>
+<!--===============================================================================================-->
+<script src="vendor/daterangepicker/moment.min.js"></script>
+<script src="vendor/daterangepicker/daterangepicker.js"></script>
+<!--===============================================================================================-->
+<script src="vendor/countdowntime/countdowntime.js"></script>
+<!--===============================================================================================-->
+<script src="js/main.js"></script>
+	<script src="js/hosturl.js"></script>
+
+<script type="text/javascript">
+
+function deleteusers(){
+	let todeleteids = getselectedids()
+	let deletebody = {
+		todeleteids : todeleteids
+	}
+	fetch(`${hosturl}/api/user/deletemulti`,{
+			headers: {
+			      'Accept': 'application/json',
+			      'Content-Type': 'application/json'
+			},
+			method:"DELETE",
+			body: JSON.stringify(deletebody)
+		})
+		.then(function(result){
+			console.log(result)
+			removeusersfromdatatable(todeleteids)
+			//getusersdatatable()
+			return result.json()
+		})
+		.catch(function(err){
+			console.log(err)
+		})
+}
+
+  function removeusersfromdatatable(selectedItems){
+    for(var i=0; i<selectedItems.length; i++){
+      let selid = `#check_${selectedItems[i]}`
+      $(selid).closest('tr').remove();
+    }
+  }		
+
+function getselectedids(){
+	var array = []
+	var checkboxes = document.querySelectorAll('input[type=checkbox]:checked')
+
+	for (var i = 0; i < checkboxes.length; i++) {
+	  array.push(checkboxes[i].value)
+	}
+	console.log(array)
+	return array
+}
+
+	 function getusersdatatable(){
+      let userTable = $('#example1').DataTable({
+        destroy: true,
+    "processing" : true,
+      "rowCallback": function (nRow, aData, iDisplayIndex) {
+           var oSettings = this.fnSettings ();
+           $("td:first", nRow).html(oSettings._iDisplayStart+iDisplayIndex +1);
+           return nRow;
+      },
+    "ajax" : {
+        "url" : `${hosturl}/api/user/getallusers`,
+        dataSrc : ''
+    },
+    "columns" : [ {
+        "data" : null
+    }, {
+        "data" : "name"
+        
+    }, {
+        "data" : "email"
+    },{
+        "data" : "contact",
+            "mRender" : function(data, type){
+         	let contactref = data ? data : "N.A."
+         
+          return contactref
+        }
+    },{
+        "data" : "profile_image",
+         "mRender" : function(data, type){
+         	let imgsrcref = data ? data : 'noimage.png'
+         	let imgsrc = `${hosturl}/admin/uploads/${imgsrcref}`
+         	let img = `<img width="150px" src="${imgsrc}">`
+         
+          return img
+        }
+    }
+    , {
+      "data": "_id",
+        "mRender": function(data, type) {
+        	let checkid = `check_${data}`
+          return `<input id='${checkid}' name="todelete" value=${data} type="checkbox">`;
+        }
+    }
+    ]
+  });
+}
+
+getusersdatatable()
+</script>
+</html>
