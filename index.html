@@ -837,17 +837,17 @@
 										</div>
 									</div>
 									<div class="right wow fadeInLeft" data-wow-duration="0.8s" data-wow-delay="0.2s">
-										<form action="http://integrothemes.com/" method="post" class="contact_form" id="contact_form">
+										<form  method="post" class="contact_form" id="contact_form">
 											<div class="returnmessage" data-success="Your message has been received, We will contact you soon."></div>
 											<div class="empty_notice"><span>Please Fill Required Fields</span></div>
 											<div class="input_wrap">
 												<ul>
 													<li><input id="name" type="text" placeholder="Name" /></li>
-													<li><input id="email" type="text" placeholder="Mail" /></li>
+													<li><input id="email" type="email" placeholder="Mail" /></li>
 													<li><textarea id="message" placeholder="Message"></textarea></li>
 												</ul>
 												<div class="arlo_tm_button" data-color="pink">
-													<a id="send_message" href="#"><span>Submit</span>	</a>
+													<a id="send_message" href="#"><span>Submit</span></a>
 												</div>
 											</div>
 										</form>
@@ -865,7 +865,7 @@
 						<div class="container">
 							<div class="footer_inner">
 								<div class="copyright wow fadeInLeft" data-wow-duration="0.8s">
-									<p>Copyright &copy; 2019. Template has been designed by <a href="https://themeforest.net/user/marketify">Marketify</a></p>
+									<p>Copyright &copy; 2020. Template has been designed by <a href="#">Ravi Ribadiya</a></p>
 								</div>
 								<div class="top wow fadeInLeft" data-wow-duration="0.8s" data-wow-delay="0.2s">
 									<span></span>
@@ -891,6 +891,37 @@
 <script src="js/plugins.js"></script>
 <script src="js/init.js"></script>
 <!-- /SCRIPTS -->
+
+<script type="text/javascript">
+		function emailsend(){
+			let name = document.getElementById('name').value
+			let email = document.getElementById('email').value
+			let message = document.getElementById('message').value
+			//let form = document.getElementById("contact_form")
+			//let formData = new FormData(form)
+			let databody = {name, email, message}
+			//console.log(formData)
+			fetch(`${hosturl}api/contact/contactmail`,{
+				headers: {
+				      'Accept': 'application/json',
+				      'Content-Type': 'application/json'
+				},
+				method:"POST",
+				body: JSON.stringify(databody)
+			})
+			.then(function(result){
+				console.log(result)
+				return result.json()
+			})
+			.then(function(data){
+				
+				window.location = 'index.html'
+			})
+			.catch(function(err){
+				console.log(err)
+			})
+		}
+</script>
 
 </body>
 
