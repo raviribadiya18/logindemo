@@ -28,36 +28,38 @@
 <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.20/css/jquery.dataTables.min.css">
 </head>
 <body>
- <table id="example1" class="table table-bordered table-striped">
-            <thead>
-            <tr>
-              <th>No.</th>
-              <th>Name</th>
-              <th>Email</th>
-              <th>Contact</th>
-              <th>Profile Image</th>
-              <!-- <th>Action</th>   -->
-              
-              <!-- <th>Date</th>
-              <th>User Info</th>
-              <th>Status</th> -->
-              <th><button onclick="deleteusers()" class="btn btn-danger">Delete</button></th>            
-            </tr>
-            </thead>
-            <tbody>
-            </tbody>
-            <!-- <tfoot>
-            <tr>
-              <th>No.</th>
-              <th>Name</th>
-              <th>Email</th>
-              <th>Contact</th>
-              <th>Profile Image</th>
-              <th><div class='form-group'><div class='custom-control custom-checkbox'><input onclick="checkAll()" class='custom-control-input' type='checkbox' id='customCheckbox3' value='option1'><label for='customCheckbox3' class='custom-control-label'><button onclick="deletekeychains()" class="btn btn-danger">Delete All</button></label></div></div></th>
-            </tr>
-            </tfoot> -->
-          </table>
-
+  <table id="example1" class="table table-bordered table-striped">
+    <thead>
+      <tr>
+        <th>No.</th>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Contact</th>
+        <th>Profile Image</th>
+        <!-- <th>Action</th>   -->
+             
+        <!-- <th>Date</th>
+        <th>User Info</th>
+        <th>Status</th> -->
+        <th>
+          <input type="checkbox" onClick="selectall(this)"/>
+          <button onclick="deleteusers()" class="btn btn-danger">Delete</button>
+        </th>            
+      </tr>
+    </thead>
+  <tbody>
+  </tbody>
+  <!-- <tfoot>
+  <tr>
+    <th>No.</th>
+    <th>Name</th>
+    <th>Email</th>
+    <th>Contact</th>
+    <th>Profile Image</th>
+    <th><div class='form-group'><div class='custom-control custom-checkbox'><input onclick="checkAll()" class='custom-control-input' type='checkbox' id='customCheckbox3' value='option1'><label for='customCheckbox3' class='custom-control-label'><button onclick="deletekeychains()" class="btn btn-danger">Delete All</button></label></div></div></th>
+  </tr>
+  </tfoot> -->
+  </table>
 </body>
 
 <!--===============================================================================================-->
@@ -169,6 +171,13 @@ function getselectedids(){
     }
     ]
   });
+}
+
+  function selectall(source) {
+  checkboxes = document.getElementsByName('todelete');
+  for(var i=0, n=checkboxes.length;i<n;i++) {
+    checkboxes[i].checked = source.checked;
+  }
 }
 
 getusersdatatable()

@@ -195,7 +195,7 @@ img.svg{
 	     -o-transition: all .3s ease;
 	        transition: all .3s ease;
 }
-.arlo_tm_leftpart .inner .menu ul li a:hover{color: #ff4b36;}
+.arlo_tm_leftpart .inner .menu ul li a:hover{color: #C600FF;}
 .arlo_tm_leftpart .inner .menu ul li a:before{
 	position: absolute;
 	content: "";
@@ -246,11 +246,11 @@ img.svg{
 	     -o-transition: all .3s ease;
 	        transition: all .3s ease;
 }
-.arlo_tm_leftpart .inner .bottom ul li a:hover{color: #ff4b36;}
+.arlo_tm_leftpart .inner .bottom ul li a:hover{color: #CA38F4;}
 .arlo_tm_leftpart .inner .resize{
 	width: 38px;
 	height: 38px;
-	background-color: #ff4b36;
+	background-color: #CA38F4;
 	position: absolute;
 	right: 0px;
 	bottom: 20%;
@@ -336,7 +336,7 @@ body.topmenu .arlo_tm_rightpart{padding-left: 0px;}
 	color: #fff;
 	transition: all .3s ease;
 }
-.arlo_tm_topmenu .topmenu_inner .menu ul li a:hover{color: #ff4b36;}
+.arlo_tm_topmenu .topmenu_inner .menu ul li a:hover{color: #CA38F4;}
 .arlo_tm_topmenu.animate{
 	padding: 25px 0px;
 	background-color: #fff;
@@ -345,7 +345,7 @@ body.topmenu .arlo_tm_rightpart{padding-left: 0px;}
 .arlo_tm_topmenu.animate .topmenu_inner .logo .dark{display: block;}
 .arlo_tm_topmenu.animate .topmenu_inner .logo .light{display: none;}
 .arlo_tm_topmenu.animate .topmenu_inner .menu ul li a{color: #000;}
-.arlo_tm_topmenu.animate .topmenu_inner .menu ul li a:hover{color: #ff4b36;}
+.arlo_tm_topmenu.animate .topmenu_inner .menu ul li a:hover{color: #CA38F4;}
 
 
 
@@ -407,7 +407,7 @@ body.extra .arlo_tm_rightpart.opened{padding-left: 400px;}
 	font-weight: 500;
 	transition: all .3s ease;
 }
-.arlo_tm_sidebar_wrap_menu .info_wrap .inner_wrap .centered_word ul li a:hover{color: #ff4b36;}
+.arlo_tm_sidebar_wrap_menu .info_wrap .inner_wrap .centered_word ul li a:hover{color: #CA38F4;}
 .arlo_tm_sidebar_wrap_menu .info_wrap .inner_wrap .centered_word ul li:last-child a:before{display: none;}
 .arlo_tm_sidebar_wrap_menu .info_wrap .inner_wrap .logo{
 	position: absolute;
@@ -415,7 +415,7 @@ body.extra .arlo_tm_rightpart.opened{padding-left: 400px;}
 	left: 0px;
 	width: 90px;
 	height: 90px;
-	background-color: #ff4b36;
+	background-color: #CA38F4;
 	text-align: center;
 	line-height: 90px;
 }
@@ -519,8 +519,8 @@ body.extra .arlo_tm_rightpart.opened{padding-left: 400px;}
 	     -o-transition: all .3s ease;
 	        transition: all .3s ease;
 }
-.arlo_tm_sidebar_wrap_menu .menu_wrap .menu_inner .nav_list > ul > li > a:hover{color: #ff4b36;}
-.arlo_tm_sidebar_wrap_menu .menu_wrap .menu_inner .nav_list > ul > li.active a{color: #ff4b36;}
+.arlo_tm_sidebar_wrap_menu .menu_wrap .menu_inner .nav_list > ul > li > a:hover{color: #CA38F4;}
+.arlo_tm_sidebar_wrap_menu .menu_wrap .menu_inner .nav_list > ul > li.active a{color: #CA38F4;}
 
 
 /*---------------------------------------------------*/
@@ -716,7 +716,7 @@ body.extra .arlo_tm_rightpart.opened{padding-left: 400px;}
 	font-size: 45px;
 	font-weight: 700;
 }
-.arlo_tm_hero_header .hero_content .name_holder h3 span{color: #ff4b36;}
+.arlo_tm_hero_header .hero_content .name_holder h3 span{color: #CA38F4;}
 .arlo_tm_hero_header .hero_content .text_typing p{
 	color: #fff;
 	font-size: 19px;
@@ -826,10 +826,10 @@ body.extra .arlo_tm_rightpart.opened{padding-left: 400px;}
 	font-size: 23px;
 	font-weight: 600;
 }
-.arlo_tm_about .rightbox .about_title h3 .arlo_tm_animation_text_word{color: #ff4b36;}
+.arlo_tm_about .rightbox .about_title h3 .arlo_tm_animation_text_word{color: #CA38F4;}
 .arlo_tm_about .rightbox .text{margin-bottom: 23px;}
 .arlo_tm_about .rightbox .text span{
-	color: #ff4b36;
+	color: #CA38F4;
 	font-style: italic;
 }
 .arlo_tm_about .about_short_contact_wrap{
@@ -860,7 +860,7 @@ body.extra .arlo_tm_rightpart.opened{padding-left: 400px;}
 }
 .arlo_tm_about .about_short_contact_wrap ul li a{
 	text-decoration: none;
-	color: #ff4b36;
+	color: #CA38F4;
     position: relative;
 	border-bottom: 1px solid transparent;
 	
@@ -870,14 +870,14 @@ body.extra .arlo_tm_rightpart.opened{padding-left: 400px;}
     -o-transition: all .3s ease;
     transition: all .3s ease;
 }
-.arlo_tm_about .about_short_contact_wrap ul li a:hover{border-bottom-color: #ff4b36;}
+.arlo_tm_about .about_short_contact_wrap ul li a:hover{border-bottom-color: #CA38F4;}
 .arlo_tm_about .about_short_contact_wrap ul li .svg{
 	position: absolute;
 	left: 0px;
 	top: 6px;
 	width: 17px;
 	height: 17px;
-	color: #ff4b36;
+	color: #CA38F4;
 }
 .arlo_tm_about .buttons{
 	width: 100%;
@@ -896,7 +896,7 @@ body.extra .arlo_tm_rightpart.opened{padding-left: 400px;}
 .arlo_tm_about .buttons ul li a{
 	text-decoration: none;
 	color: #fff;
-	background-color: #ff4b36;
+	background-color: #CA38F4;
 	display: inline-block;
 	padding: 10px 45px;
 	font-family: "Raleway";
@@ -942,7 +942,7 @@ body.extra .arlo_tm_rightpart.opened{padding-left: 400px;}
 	content: "";
 	width: 30px;
 	height: 4px;
-	background-color: #ff4b36;
+	background-color: #CA38F4;
 	left: 0px;
 	bottom: -11px;
 }
@@ -951,7 +951,7 @@ body.extra .arlo_tm_rightpart.opened{padding-left: 400px;}
 	content: "";
 	width: 50px;
 	height: 4px;
-	background-color: #ff4b36;
+	background-color: #CA38F4;
 	left: 0px;
 	bottom: -20px;
 }
@@ -1025,7 +1025,7 @@ body.extra .arlo_tm_rightpart.opened{padding-left: 400px;}
 }
 .arlo_tm_services .service_inner ul li .inner .number span{
 	font-weight: 600;
-	color: #ff4b36;
+	color: #CA38F4;
 	font-size: 16px;
 }
 .arlo_tm_services .service_inner ul li .inner .title{
@@ -1038,11 +1038,11 @@ body.extra .arlo_tm_rightpart.opened{padding-left: 400px;}
 .arlo_tm_services .service_inner ul li .inner .text{margin-bottom: 10px;}
 .arlo_tm_services .service_inner ul li .inner .read_more a{
 	text-decoration: none;
-	color: #ff4b36;
+	color: #CA38F4;
 	transition: all .3s ease;
 	border-bottom: 1px solid transparent;
 }
-.arlo_tm_services .service_inner ul li .inner .read_more a:hover{border-bottom-color: #ff4b36;}
+.arlo_tm_services .service_inner ul li .inner .read_more a:hover{border-bottom-color: #CA38F4;}
 
 
 
@@ -1084,7 +1084,7 @@ body.extra .arlo_tm_rightpart.opened{padding-left: 400px;}
 	margin-bottom: 29px;
 }
 .arlo_tm_progress_wrap .progress_wrap_inner .left .main_title h3{font-size: 23px;}
-.arlo_tm_progress_wrap .progress_wrap_inner .left .main_title h3 span{color: #ff4b36}
+.arlo_tm_progress_wrap .progress_wrap_inner .left .main_title h3 span{color: #CA38F4}
 .arlo_tm_progress_wrap .right{
 	width: 50%;
 	height: auto;
@@ -1145,7 +1145,7 @@ body.extra .arlo_tm_rightpart.opened{padding-left: 400px;}
 	height: auto;
 	clear: both;
 	float: left;
-	background-color: #ff4b36;
+	background-color: #CA38F4;
 	padding: 60px 0px;
 	display: none;
 }
@@ -1207,8 +1207,8 @@ body.extra .arlo_tm_rightpart.opened{padding-left: 400px;}
 	     -o-transition: all .1s ease;
 	        transition: all .1s ease;
 }
-.arlo_tm_portfolio_filter li a:hover{color: #ff4b36;}
-.arlo_tm_portfolio_filter li a.current{color: #ff4b36;}
+.arlo_tm_portfolio_filter li a:hover{color: #CA38F4;}
+.arlo_tm_portfolio_filter li a.current{color: #CA38F4;}
 
 /* PORTFOLIO LIST */
 
@@ -1316,7 +1316,7 @@ body.extra .arlo_tm_rightpart.opened{padding-left: 400px;}
 	left: 0px;
 }
 .arlo_tm_details_wrap .details_inner .right ul li .icon .svg{
-	color: #ff4b36;
+	color: #CA38F4;
 	width: 30px;
 	height: 30px;
 }
@@ -1402,7 +1402,7 @@ body.extra .arlo_tm_rightpart.opened{padding-left: 400px;}
 	position:absolute;
 	left: 0px;
 	bottom: -32px;
-	background-color: #ff4b36;
+	background-color: #CA38F4;
 	padding: 0px 10px;
 	
 	-webkit-transition: all .3s ease;
@@ -1498,7 +1498,7 @@ body.extra .arlo_tm_rightpart.opened{padding-left: 400px;}
 }
 .arlo_tm_timeline .timeline_inner ul li .inner .number span{
 	font-weight: 600;
-	color: #ff4b36;
+	color: #CA38F4;
 	font-size: 16px;
 }
 .arlo_tm_timeline .timeline_inner ul li .inner .title{
@@ -1511,11 +1511,11 @@ body.extra .arlo_tm_rightpart.opened{padding-left: 400px;}
 .arlo_tm_timeline .timeline_inner ul li .inner .text{margin-bottom: 10px;}
 .arlo_tm_timeline .timeline_inner ul li .inner .read_more a{
 	text-decoration: none;
-	color: #ff4b36;
+	color: #CA38F4;
 	transition: all .3s ease;
 	border-bottom: 1px solid transparent;
 }
-.arlo_tm_timeline .timeline_inner ul li .inner .read_more a:hover{border-bottom-color: #ff4b36;}
+.arlo_tm_timeline .timeline_inner ul li .inner .read_more a:hover{border-bottom-color: #CA38F4;}
 
 
 
@@ -1591,7 +1591,7 @@ body.extra .arlo_tm_rightpart.opened{padding-left: 400px;}
 }
 .arlo_tm_testimonial .testimonial_content .content_inner .icon i{
 	font-size: 60px;
-	color: #ff4b36;
+	color: #CA38F4;
 }
 .arlo_tm_testimonial .testimonial_content .content_inner .texts p{
 	color: #eee;
@@ -1606,7 +1606,7 @@ body.extra .arlo_tm_rightpart.opened{padding-left: 400px;}
 	margin-bottom: 3px;
 }
 .arlo_tm_testimonial .testimonial_content .content_inner .title .job{
-	color: #ff4b36;
+	color: #CA38F4;
 	font-size: 18px;
 	font-weight: 400;
 }
@@ -1708,7 +1708,7 @@ body.extra .arlo_tm_rightpart.opened{padding-left: 400px;}
 }
 .arlo_tm_home_news .news_inner ul li .inner .dates p .first a{
 	text-decoration: none;
-	color: #ff4b36;
+	color: #CA38F4;
 	position: relative;
 	border-bottom: 1px solid transparent;
 	
@@ -1718,7 +1718,7 @@ body.extra .arlo_tm_rightpart.opened{padding-left: 400px;}
 	     -o-transition: all .3s ease;
 	        transition: all .3s ease;
 }
-.arlo_tm_home_news .news_inner ul li .inner .dates p .first a:hover{border-bottom-color: #ff4b36;}
+.arlo_tm_home_news .news_inner ul li .inner .dates p .first a:hover{border-bottom-color: #CA38F4;}
 .arlo_tm_home_news .news_inner ul li .inner .dates p .first a:before{
 	position: absolute;
 	content: "";
@@ -1736,7 +1736,7 @@ body.extra .arlo_tm_rightpart.opened{padding-left: 400px;}
 }
 .arlo_tm_home_news .news_inner ul li .inner .dates p .category a{
 	text-decoration: none;
-	color: #ff4b36;
+	color: #CA38F4;
 	position: relative;
 	border-bottom: 1px solid transparent;
 	
@@ -1746,7 +1746,7 @@ body.extra .arlo_tm_rightpart.opened{padding-left: 400px;}
 	     -o-transition: all .3s ease;
 	        transition: all .3s ease;
 }
-.arlo_tm_home_news .news_inner ul li .inner .dates p .category a:hover{border-bottom-color: #ff4b36;}
+.arlo_tm_home_news .news_inner ul li .inner .dates p .category a:hover{border-bottom-color: #CA38F4;}
 .arlo_tm_home_news .news_inner ul li .inner .dates p .category:before{
 	position: absolute;
 	content: "";
@@ -1770,11 +1770,11 @@ body.extra .arlo_tm_rightpart.opened{padding-left: 400px;}
 	     -o-transition: all .3s ease;
 	        transition: all .3s ease;
 }
-.arlo_tm_home_news .news_inner ul li .inner .details .title a:hover{color: #ff4b36;}
+.arlo_tm_home_news .news_inner ul li .inner .details .title a:hover{color: #CA38F4;}
 .arlo_tm_home_news .news_inner ul li .inner .details .text{margin-bottom: 20px;}
 .arlo_tm_home_news .news_inner ul li .inner .details .read_more a{
 	text-decoration: none;
-	color: #ff4b36;
+	color: #CA38F4;
 }
 
 /*---------------------------------------------------*/
@@ -1787,7 +1787,7 @@ body.extra .arlo_tm_rightpart.opened{padding-left: 400px;}
 	clear: both;
 	float: left;
 	padding: 70px 0px;
-	background-color: #ff4b36;
+	background-color: #CA38F4;
 }
 .arlo_tm_partners .partners_inner{
 	width: 100%;
@@ -1859,7 +1859,7 @@ body.extra .arlo_tm_rightpart.opened{padding-left: 400px;}
 }
 .arlo_tm_contact .about_short_contact_wrap ul li a{
 	text-decoration: none;
-	color: #ff4b36;
+	color: #CA38F4;
     position: relative;
 	border-bottom: 1px solid transparent;
 	
@@ -1869,14 +1869,14 @@ body.extra .arlo_tm_rightpart.opened{padding-left: 400px;}
 	     -o-transition: all .3s ease;
 	        transition: all .3s ease;
 }
-.arlo_tm_contact .about_short_contact_wrap ul li a:hover{border-bottom-color: #ff4b36;}
+.arlo_tm_contact .about_short_contact_wrap ul li a:hover{border-bottom-color: #CA38F4;}
 .arlo_tm_contact .about_short_contact_wrap ul li .svg{
 	position: absolute;
 	left: 0px;
 	top: 6px;
 	width: 17px;
 	height: 17px;
-	color: #ff4b36;
+	color: #CA38F4;
 }
 .arlo_tm_contact .contact_inner .right{width: 50%;}
 .arlo_tm_contact .contact_inner .right .input_wrap{
@@ -2025,7 +2025,7 @@ body.extra .arlo_tm_rightpart.opened{padding-left: 400px;}
 }
 .arlo_tm_news > ul > li .inner .dates p .first a{
 	text-decoration: none;
-	color: #ff4b36;
+	color: #CA38F4;
 	position: relative;
 	border-bottom: 1px solid transparent;
 	
@@ -2035,7 +2035,7 @@ body.extra .arlo_tm_rightpart.opened{padding-left: 400px;}
 	     -o-transition: all .3s ease;
 	        transition: all .3s ease;
 }
-.arlo_tm_news > ul > li .inner .dates p .first a:hover{border-bottom-color: #ff4b36;}
+.arlo_tm_news > ul > li .inner .dates p .first a:hover{border-bottom-color: #CA38F4;}
 .arlo_tm_news > ul > li .inner .dates p .first a:before{
 	position: absolute;
 	content: "";
@@ -2053,7 +2053,7 @@ body.extra .arlo_tm_rightpart.opened{padding-left: 400px;}
 }
 .arlo_tm_news > ul > li .inner .dates p .category a{
 	text-decoration: none;
-	color: #ff4b36;
+	color: #CA38F4;
 	position: relative;
 	border-bottom: 1px solid transparent;
 	
@@ -2063,7 +2063,7 @@ body.extra .arlo_tm_rightpart.opened{padding-left: 400px;}
 	     -o-transition: all .3s ease;
 	        transition: all .3s ease;
 }
-.arlo_tm_news > ul > li .inner .dates p .category a:hover{border-bottom-color: #ff4b36;}
+.arlo_tm_news > ul > li .inner .dates p .category a:hover{border-bottom-color: #CA38F4;}
 .arlo_tm_news > ul > li .inner .dates p .category:before{
 	position: absolute;
 	content: "";
@@ -2089,11 +2089,11 @@ body.extra .arlo_tm_rightpart.opened{padding-left: 400px;}
 	     -o-transition: all .3s ease;
 	        transition: all .3s ease;
 }
-.arlo_tm_news > ul > li .inner .details .title a:hover{color: #ff4b36;}
+.arlo_tm_news > ul > li .inner .details .title a:hover{color: #CA38F4;}
 .arlo_tm_news > ul > li .inner .details .text{margin-bottom: 20px;}
 .arlo_tm_news > ul > li .inner .details .read_more a{
 	text-decoration: none;
-	color: #ff4b36;
+	color: #CA38F4;
 }
 .arlo_tm_sidebar_wrap{
 	width: 100%;
@@ -2168,7 +2168,7 @@ body.extra .arlo_tm_rightpart.opened{padding-left: 400px;}
 	content: "";
 	width: 32px;
 	height: 2px;
-	background-color: #ff4b36;
+	background-color: #CA38F4;
 	left: 0px;
 	bottom: -7px;
 }
@@ -2219,7 +2219,7 @@ body.extra .arlo_tm_rightpart.opened{padding-left: 400px;}
 	     -o-transition: all .3s ease;
 	        transition: all .3s ease;
 }
-.arlo_tm_sidebar_wrap .sidebar_list_wrap ul li .posts_list ul li:hover .title_date h3 a{color: #ff4b36;}
+.arlo_tm_sidebar_wrap .sidebar_list_wrap ul li .posts_list ul li:hover .title_date h3 a{color: #CA38F4;}
 .arlo_tm_sidebar_wrap .sidebar_list_wrap ul li .posts_list ul li .title_date span{
 	font-size: 14px;
 	color: #6f6f6f;
@@ -2306,7 +2306,7 @@ body.extra .arlo_tm_rightpart.opened{padding-left: 400px;}
 	     -o-transition: all .3s ease;
 	        transition: all .3s ease;
 }
-.arlo_tm_sidebar_wrap .sidebar_list_wrap ul li .list_wrap ul li .inner a:hover{color: #ff4b36;}
+.arlo_tm_sidebar_wrap .sidebar_list_wrap ul li .list_wrap ul li .inner a:hover{color: #CA38F4;}
 .arlo_tm_sidebar_wrap .sidebar_list_wrap ul li .list_wrap ul li .inner .right span{color: #6f6f6f;}
 .arlo_tm_sidebar_wrap .sidebar_list_wrap ul li .tags{
 	width: 100%;
@@ -2364,7 +2364,7 @@ body.extra .arlo_tm_rightpart.opened{padding-left: 400px;}
 	line-height: 38px;
 	background-color:  #6f6f6f; 
 }
-.arlo_tm_pagination ul li:nth-child(1){background-color: #ff4b36;}
+.arlo_tm_pagination ul li:nth-child(1){background-color: #CA38F4;}
 .arlo_tm_pagination ul li span{
 	color: #fff;
 	font-size: 14px;
@@ -2381,7 +2381,7 @@ body.extra .arlo_tm_rightpart.opened{padding-left: 400px;}
 	     -o-transition: all .3s ease;
 	        transition: all .3s ease;
 }
-.arlo_tm_pagination ul li a:hover{background-color: #ff4b36;}
+.arlo_tm_pagination ul li a:hover{background-color: #CA38F4;}
 .arlo_tm_pagination .view{padding-left: 10px;}
 .arlo_tm_footer{
 	width: 100%;
@@ -2402,7 +2402,7 @@ body.extra .arlo_tm_rightpart.opened{padding-left: 400px;}
 }
 .arlo_tm_footer .footer_inner .copyright a{
 	text-decoration: none;
-	color: #ff4b36;
+	color: #CA38F4;
 	border-bottom: 1px solid transparent;
 	
 	-webkit-transition: all .3s ease;
@@ -2411,11 +2411,11 @@ body.extra .arlo_tm_rightpart.opened{padding-left: 400px;}
 	     -o-transition: all .3s ease;
 	        transition: all .3s ease;
 }
-.arlo_tm_footer .footer_inner .copyright a:hover{border-bottom-color: #ff4b36;}
+.arlo_tm_footer .footer_inner .copyright a:hover{border-bottom-color: #CA38F4;}
 .arlo_tm_footer .footer_inner .top{
 	width: 50px;
 	height: 50px;
-	background-color: #ff4b36;
+	background-color: #CA38F4;
 	position: relative;
 }
 .arlo_tm_footer .footer_inner .top span{
@@ -2488,7 +2488,7 @@ body.extra .arlo_tm_rightpart.opened{padding-left: 400px;}
 }
 .arlo_tm_news_single .single_inner .short_detail .dates p .first a{
 	text-decoration: none;
-	color: #ff4b36;
+	color: #CA38F4;
 	position: relative;
 	border-bottom: 1px solid transparent;
 	
@@ -2498,7 +2498,7 @@ body.extra .arlo_tm_rightpart.opened{padding-left: 400px;}
 	     -o-transition: all .3s ease;
 	        transition: all .3s ease;
 }
-.arlo_tm_news_single .single_inner .short_detail .dates p .first a:hover{border-bottom-color: #ff4b36;}
+.arlo_tm_news_single .single_inner .short_detail .dates p .first a:hover{border-bottom-color: #CA38F4;}
 .arlo_tm_news_single .single_inner .short_detail .dates p .first a:before{
 	position: absolute;
 	content: "";
@@ -2516,7 +2516,7 @@ body.extra .arlo_tm_rightpart.opened{padding-left: 400px;}
 }
 .arlo_tm_news_single .single_inner .short_detail .dates p .category a{
 	text-decoration: none;
-	color: #ff4b36;
+	color: #CA38F4;
 	position: relative;
 	border-bottom: 1px solid transparent;
 	
@@ -2526,7 +2526,7 @@ body.extra .arlo_tm_rightpart.opened{padding-left: 400px;}
 	     -o-transition: all .3s ease;
 	        transition: all .3s ease;
 }
-.arlo_tm_news_single .single_inner .short_detail .dates p .category a:hover{border-bottom-color: #ff4b36;}
+.arlo_tm_news_single .single_inner .short_detail .dates p .category a:hover{border-bottom-color: #CA38F4;}
 .arlo_tm_news_single .single_inner .short_detail .dates p .category:before{
 	position: absolute;
 	content: "";
@@ -2560,7 +2560,7 @@ body.extra .arlo_tm_rightpart.opened{padding-left: 400px;}
 	height: 100%;
 	left: 0px;
 	top: 0px;
-	background-color: #ff4b36;
+	background-color: #CA38F4;
 }
 .arlo_tm_news_single .single_inner .descriptions .description_images{
 	width: 100%;
@@ -2704,7 +2704,7 @@ body.extra .arlo_tm_rightpart.opened{padding-left: 400px;}
 	     -o-transition: all .3s ease;
 	        transition: all .3s ease;
 }
-.lexal_tm_commentbox_wrap .wp h3 a:hover{color: #ff4b36;}
+.lexal_tm_commentbox_wrap .wp h3 a:hover{color: #CA38F4;}
 .lexal_tm_commentbox_wrap .wp .date{
 	font-size: 13px;
 	text-transform: uppercase;
@@ -2713,7 +2713,7 @@ body.extra .arlo_tm_rightpart.opened{padding-left: 400px;}
 }
 .lexal_tm_commentbox_wrap .wp .text a{
 	text-decoration: none;
-	color: #ff4b36;
+	color: #CA38F4;
 	border-bottom: 1px solid transparent;
 	
 	-webkit-transition: all .3s ease;
@@ -2722,7 +2722,7 @@ body.extra .arlo_tm_rightpart.opened{padding-left: 400px;}
 	     -o-transition: all .3s ease;
 	        transition: all .3s ease;
 }
-.lexal_tm_commentbox_wrap .wp .text a:hover{border-bottom-color: #ff4b36;}
+.lexal_tm_commentbox_wrap .wp .text a:hover{border-bottom-color: #CA38F4;}
 .lexal_tm_commentbox_wrap .reply_comment_wrap{
 	width: 100%;
 	height: 200px;
@@ -2800,7 +2800,7 @@ body.extra .arlo_tm_rightpart.opened{padding-left: 400px;}
 .arlo_tm_button a{
 	text-decoration: none;
 	color: #fff;
-	background-color: #ff4b36;
+	background-color: #CA38F4;
 	display: inline-block;
 	padding: 10px 45px;
 	font-family: "Raleway";
@@ -2893,7 +2893,7 @@ body.extra .arlo_tm_rightpart.opened{padding-left: 400px;}
 }
 .arlo_tm_portfolio_single .descriptions_section .left ul li .inner span a{
 	text-decoration: none;
-	color: #ff4b36;
+	color: #CA38F4;
 	border-bottom: 1px solid transparent;
 	
 	-webkit-transition: all .3s ease;
@@ -2902,14 +2902,14 @@ body.extra .arlo_tm_rightpart.opened{padding-left: 400px;}
 	     -o-transition: all .3s ease;
 	        transition: all .3s ease;
 }
-.arlo_tm_portfolio_single .descriptions_section .left ul li .inner span a:hover{border-bottom-color: #ff4b36;}
+.arlo_tm_portfolio_single .descriptions_section .left ul li .inner span a:hover{border-bottom-color: #CA38F4;}
 .arlo_tm_portfolio_single .descriptions_section .left ul li .inner .svg{
 	position: absolute;
     left: 0px;
     top: 6px;
     width: 17px;
     height: 17px;
-    color: #ff4b36;
+    color: #CA38F4;
 }
 .arlo_tm_portfolio_single .descriptions_section .right{width: 60%;}
 .arlo_tm_portfolio_single .single_list{
@@ -2963,7 +2963,7 @@ body.extra .arlo_tm_rightpart.opened{padding-left: 400px;}
     line-height: 41px;
     cursor: pointer;
     position: relative;
-	background-color: #ff4b36;
+	background-color: #CA38F4;
 	font-family: "Raleway";
 }
 .arlo_tm_prev_next ul li.prev a{padding: 0px 20px 0px 35px;}
@@ -3068,7 +3068,7 @@ body.extra .arlo_tm_rightpart.opened{padding-left: 400px;}
 	font-size: 45px;
 	font-weight: 700;
 }
-.arlo_tm_hero_header_water .hero_content .name_holder h3 span{color: #ff4b36;}
+.arlo_tm_hero_header_water .hero_content .name_holder h3 span{color: #CA38F4;}
 .arlo_tm_hero_header_water .hero_content .text_typing p{
 	color: #fff;
 	font-size: 19px;
@@ -3185,7 +3185,7 @@ body.extra .arlo_tm_rightpart.opened{padding-left: 400px;}
 	font-size: 45px;
 	font-weight: 700;
 }
-.arlo_tm_video_hero_wrap .hero_content .name_holder h3 span{color: #ff4b36;}
+.arlo_tm_video_hero_wrap .hero_content .name_holder h3 span{color: #CA38F4;}
 .arlo_tm_video_hero_wrap .hero_content .text_typing p{
 	color: #fff;
 	font-size: 19px;
@@ -3260,7 +3260,7 @@ body.extra .arlo_tm_rightpart.opened{padding-left: 400px;}
 	font-size: 45px;
 	font-weight: 700;
 }
-.arlo_tm_kenburn_hero .hero_content .name_holder h3 span{color: #ff4b36;}
+.arlo_tm_kenburn_hero .hero_content .name_holder h3 span{color: #CA38F4;}
 .arlo_tm_kenburn_hero .hero_content .text_typing p{
 	color: #fff;
 	font-size: 19px;
@@ -3326,7 +3326,7 @@ body.extra .arlo_tm_rightpart.opened{padding-left: 400px;}
 .arlo_tm_intro_button a{
 	text-decoration: none;
 	color: #fff;
-	background-color: #ff4b36;
+	background-color: #CA38F4;
 	display: inline-block;
 	padding: 10px 40px;
 	position: relative;
@@ -3370,7 +3370,7 @@ body.extra .arlo_tm_rightpart.opened{padding-left: 400px;}
 	font-size: 18px;
 	font-weight: 700;
 }
-.arlo_tm_title_main_holder h3 span{color: #ff4b36;}
+.arlo_tm_title_main_holder h3 span{color: #CA38F4;}
 .arlo_tm_title_main_holder h3 span.customer{font-family: "Roboto";}
 .arlo_tm_intro_mainpart .main_list{
 	width: 100%;
@@ -3480,11 +3480,11 @@ body.extra .arlo_tm_rightpart.opened{padding-left: 400px;}
 }
 .arlo_tm_intro_footer .left p a{
 	text-decoration: none;
-	color: #ff4b36;
+	color: #CA38F4;
 	border-bottom: 1px solid transparent;
 	transition: all .3s ease;
 }
-.arlo_tm_intro_footer .left p a:hover{border-bottom-color: #ff4b36;}
+.arlo_tm_intro_footer .left p a:hover{border-bottom-color: #CA38F4;}
 .arlo_tm_intro_footer .right ul{
 	margin: 0px;
 	list-style-type: none;
@@ -3498,7 +3498,7 @@ body.extra .arlo_tm_rightpart.opened{padding-left: 400px;}
 	color: #fff;
 	transition: all .3s ease;
 }
-.arlo_tm_intro_footer .right ul li a:hover{color: #ff4b36;}
+.arlo_tm_intro_footer .right ul li a:hover{color: #CA38F4;}
 
 .morocco_music .sound_condition{
     width: 80px;
@@ -3620,11 +3620,11 @@ body.extra .arlo_tm_rightpart.opened{padding-left: 400px;}
 	font-weight: 500;
 }
 .arlo_tm_about_second .about_inner .title h3 .arlo_tm_animation_text_word{
-	color: #ff4b36;
+	color: #CA38F4;
 }
 .arlo_tm_about_second .about_inner .text{margin-bottom: 39px;}
 .arlo_tm_about_second .about_inner .text p span{
-	color: #ff4b36;
+	color: #CA38F4;
 	font-style: italic;
 }
 .arlo_tm_about_second .info_list{
@@ -3662,7 +3662,7 @@ body.extra .arlo_tm_rightpart.opened{padding-left: 400px;}
 	content: "";
 	width: 20px;
 	height: 1px;
-	background-color: #ff4b36;
+	background-color: #CA38F4;
 	top: 50%;
 	transform: translateY(-50%);
 	left: 100%;
@@ -3670,11 +3670,11 @@ body.extra .arlo_tm_rightpart.opened{padding-left: 400px;}
 }
 .arlo_tm_about_second .info_list ul li .inner a{
 	text-decoration: none;
-	color: #ff4b36;
+	color: #CA38F4;
 	transition: all .3s ease;
 	border-bottom: 1px solid transparent;
 }
-.arlo_tm_about_second .info_list ul li .inner a:hover{border-bottom-color: #ff4b36;}
+.arlo_tm_about_second .info_list ul li .inner a:hover{border-bottom-color: #CA38F4;}
 
 
 .arlo_tm_about_second .buttons{
@@ -3694,7 +3694,7 @@ body.extra .arlo_tm_rightpart.opened{padding-left: 400px;}
 .arlo_tm_about_second .buttons ul li a{
 	text-decoration: none;
 	color: #fff;
-	background-color: #ff4b36;
+	background-color: #CA38F4;
 	display: inline-block;
 	padding: 10px 45px;
 	font-family: "Raleway";
@@ -3742,10 +3742,10 @@ body.extra .arlo_tm_rightpart.opened{padding-left: 400px;}
 	max-width: 400px;
 	margin-right: 40px;
 }
-.arlo_tm_progress_second .info_wrap .left h3 span{color: #ff4b36;}
+.arlo_tm_progress_second .info_wrap .left h3 span{color: #CA38F4;}
 .arlo_tm_progress_second .info_wrap .right{width: 50%;}
 .arlo_tm_progress_second .info_wrap .right p{
-	border-left: 4px solid #ff4b36;
+	border-left: 4px solid #CA38F4;
 	padding-left: 35px;
 }
 
@@ -3784,7 +3784,7 @@ body.extra .arlo_tm_rightpart.opened{padding-left: 400px;}
 	content: "";
 	width: 20px;
 	height: 1px;
-	background-color: #ff4b36;
+	background-color: #CA38F4;
 	top: 50%;
 	transform: translateY(-50%);
 	left: 100%;
