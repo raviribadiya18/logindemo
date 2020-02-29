@@ -122,8 +122,9 @@
 						<div class="overlay"></div>
 						<div class="hero_content">
 							<div class="image_wrap">
-								<img src="img/about/500x500.jpg" alt="" />
-								<div class="main" data-img-url="img/about/7.jpg"></div>
+								<div class="main" id="changeslider" data-img-url="img/about/7.jpg"></div>
+								<!-- <img src="img/about/500x500.jpg" alt="" />
+								<div class="main" data-img-url="img/about/7.jpg"></div> -->
 							</div>
 							<div class="name_holder">
 								<h3>Ravi <span>Ribadiya</span></h3>
@@ -808,34 +809,51 @@
 <!-- /SCRIPTS -->
 
 <script type="text/javascript">
-		function emailsend(){
-			let name = document.getElementById('name').value
-			let email = document.getElementById('email').value
-			let message = document.getElementById('message').value
-			//let form = document.getElementById("contact_form")
-			//let formData = new FormData(form)
-			let databody = {name, email, message}
-			//console.log(formData)
-			fetch(`${hosturl}/api/contact/wecontact`,{
-				headers: {
-				      'Accept': 'application/json',
-				      'Content-Type': 'application/json'
-				},
-				method:"POST",
-				body: JSON.stringify(databody)
-			})
-			.then(function(result){
-				console.log(result)
-				return result.json()
-			})
-			.then(function(data){
+		// function emailsend(){
+		// 	let name = document.getElementById('name').value
+		// 	let email = document.getElementById('email').value
+		// 	let message = document.getElementById('message').value
+		// 	//let form = document.getElementById("contact_form")
+		// 	//let formData = new FormData(form)
+		// 	let databody = {name, email, message}
+		// 	//console.log(formData)
+		// 	fetch(`${hosturl}/api/contact/wecontact`,{
+		// 		headers: {
+		// 		      'Accept': 'application/json',
+		// 		      'Content-Type': 'application/json'
+		// 		},
+		// 		method:"POST",
+		// 		body: JSON.stringify(databody)
+		// 	})
+		// 	.then(function(result){
+		// 		console.log(result)
+		// 		return result.json()
+		// 	})
+		// 	.then(function(data){
 				
-				window.location = 'index.html'
-			})
-			.catch(function(err){
-				console.log(err)
-			})
+		// 		window.location = 'index.html'
+		// 	})
+		// 	.catch(function(err){
+		// 		console.log(err)
+		// 	})
+		// }
+		let imagesc = ['2.jpg','3.jpg','4.jpg','5.jpg','6.jpg','7.jpg']
+		
+		function changeslider(){
+			setInterval(function(){
+				var randomnumber = Math.floor(Math.random()*(5 - 0 + 1)) + 0
+				let imgind = randomnumber
+				console.log(imgind)
+				let imgpath = `img/about/${imagesc[imgind]}`
+				console.log(imgpath)
+				let divtocng = document.getElementById("changeslider")
+				divtocng.setAttribute("data-img-url",imgpath)
+				divtocng.style.backgroundImage = `url(${imgpath})`
+				console.log("its done")
+			}, 5000)
 		}
+
+		changeslider()
 </script>
 
 </body>
