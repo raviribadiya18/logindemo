@@ -517,24 +517,24 @@
 										<div class="inner">
 											<div class="image">
 												<img src="img/team/1.jpg" alt="" />
-												<div class="main" data-img-url="img/about/6.jpg"></div>
+												<!-- <div class="main" data-img-url="img/about/6.jpg"></div> -->
+												<div class="main" id="managerslider" data-img-url="img/about/6.jpg"></div>
 												<div class="social">
 													<ul>
 														<li><a href="#"><i class="xcon-facebook"></i></a></li>	
 														<li><a href="#"><i class="xcon-twitter"></i></a></li>	
 														<li><a href="#"><i class="xcon-linkedin"></i></a></li>	
 														<li><a href="#"><i class="xcon-instagram"></i></a></li>	
-														<li><a href="#"><i class="xcon-behance"></i></a></li>	
 													</ul>
 												</div>
 											</div>
 											<div class="details">
 												<h3>Ravi Ribadiya</h3>
-												<span>Web Developer</span>
+												<span>Manager</span>
 											</div>
 										</div>
 									</li>
-									<li class="wow fadeInLeft" data-wow-duration="0.8s" data-wow-delay="0.2s">
+									<!-- <li class="wow fadeInLeft" data-wow-duration="0.8s" data-wow-delay="0.2s">
 										<div class="inner">
 											<div class="image">
 												<img src="img/team/1.jpg" alt="" />
@@ -575,7 +575,7 @@
 												<span>Manager</span>
 											</div>
 										</div>
-									</li>
+									</li> -->
 								</ul>
 							</div>
 						</div>
@@ -838,22 +838,55 @@
 		// 	})
 		// }
 		let imagesc = ['2.jpg','3.jpg','4.jpg','5.jpg','6.jpg','7.jpg']
+
+		let i = 0
 		
 		function changeslider(){
 			setInterval(function(){
-				var randomnumber = Math.floor(Math.random()*(5 - 0 + 1)) + 0
-				let imgind = randomnumber
-				console.log(imgind)
-				let imgpath = `img/about/${imagesc[imgind]}`
-				console.log(imgpath)
+				//var randomnumber = Math.floor(Math.random()*(5 - 0 + 1)) + 0
+				//let imgind = randomnumber
+				//console.log(imgind)
+				let imgpath = `img/about/${imagesc[i]}`
 				let divtocng = document.getElementById("changeslider")
 				divtocng.setAttribute("data-img-url",imgpath)
 				divtocng.style.backgroundImage = `url(${imgpath})`
+				console.log("main",imgpath)
+				if(i < imagesc.length - 1){
+					i++
+				}
+				else{
+					i = 0
+				}			
 				console.log("its done")
 			}, 5000)
 		}
-
 		changeslider()
+
+		let imgsc = ['6.jpg','7.jpg']
+		let j = 0
+
+		function managerslider(){
+			setInterval(function(){
+				//var randomnumber = Math.floor(Math.random()*(5 - 0 + 1)) + 0
+				//let imgind = randomnumber
+				//console.log(imgind)
+				let imgpath1 = `img/about/${imgsc[j]}`
+				let divtocng1 = document.getElementById("managerslider")
+				divtocng1.setAttribute("data-img-url",imgpath1)
+				divtocng1.style.backgroundImage = `url(${imgpath1})`
+				// divtocng1.src
+				console.log("manager",imgpath1)
+				if(j < imgsc.length - 1){
+					j++
+				}
+				else{
+					j = 0
+				}			
+				console.log("its done1")
+			}, 5000)
+		}
+		managerslider()
+
 </script>
 
 </body>
